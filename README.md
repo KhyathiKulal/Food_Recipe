@@ -12,17 +12,18 @@ Steps :
         venv\Scripts\activate
         -- On macOS/Linux
         source venv/bin/activate
-  * Using venv :
-      - Create a virtual environment : python3 -m venv venv
-      - Activate the virtual  :
-         --On Windows
-         venv\Scripts\activate
-         -- On macOS/Linux
-         source venv/bin/activate
+   * Using venv :
+     - Create a virtual environment : python3 -m venv venv
+     - Activate the virtual  :
+        --On Windows
+        venv\Scripts\activate
+        -- On macOS/Linux
+        source venv/bin/activate
         
 2. copy the folder and move to it : cd Food_Recipe
 
 3. Apply Migrations : python manage.py makemigrations
+                      and 
                       python manage.py migrate
 
-4. Run the Development Server : python manage.py runserver
+5. Run the Development Server : python manage.py runserver
