@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 {% block body %}
 
-
-<div class="container">
+<!-- {{request.user}} -->
+<nav class="navbar p-3 shadow-lg ">
+    <div class="container-fluid">
+      <h3 class="navbar-brand">Recipy</h3>
+        <a href="/logout/" class="btn btn-success" type="submit">Logout</a>
+    </div>
+  </nav>
+<div class="container mt-3">
 
     <form class="mx-auto col-6 card p-5 shadow-lg" enctype="multipart/form-data" method="post">
         {% csrf_token %}
